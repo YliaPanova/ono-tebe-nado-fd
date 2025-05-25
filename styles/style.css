@@ -23,6 +23,7 @@
 }
 
 .body {
+  width: 100%;
   max-width: 1100px;
   max-height: 3028px;
 }
@@ -150,32 +151,32 @@
 
 .cover_it {
   align-self: flex-start;
-  text-align: center; 
+  text-align: center;
   width: 286px;
-  height: 115px; 
+  height: 115px;
   letter-spacing: 30px;
 }
 
 .cover_you {
   align-self: center;
-  text-align: center; 
+  text-align: center;
   width: 339px;
-  height: 115px; 
+  height: 115px;
   letter-spacing: 26.5px;
 }
 
 .cover_need {
-  align-self: flex-end;    
+  align-self: flex-end;
   text-align: right;
   width: 387px;
-  height: 115px;  
+  height: 115px;
   letter-spacing: 30px;
 }
 
 .description {
   display: flex;
   align-items: baseline;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   width: 1000px;
   height: 51px;
   padding-top: 106px;
@@ -210,7 +211,7 @@
   color: #fff;
   font-size: 22px;
   line-height: 100%;
-  font-weight: 500;  
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
 }
@@ -224,7 +225,7 @@
   font-family: "Raleway-Bold", "Arial", sans-serif;
   font-size: 40px;
   font-weight: 700;
-  color: #000; 
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -235,7 +236,7 @@
   gap: 15px;
   justify-content: space-between;
   padding: 0;
-  margin: 0 auto;  
+  margin: 0 auto;
   margin-left: 13px;
 }
 
