@@ -1,31 +1,6 @@
-@font-face {
-  font-family: "raleway";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Raleway-Regular"),
-	   url("/fonts/Raleway-Regular.woff2") format("woff2"), 
-	   url("/fonts/Raleway-Regular.woff") format("woff");
-
-}
-
-@font-face {
-  font-family: "raleway-bold";
-  font-style: normal;
-  font-weight: bold;
-  src: local("Raleway-Bold"),
-	   url("/fonts/Raleway-Bold.woff2") format("woff2"), 
-	   url("/fonts/Raleway-Bold.woff") format("woff");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .body {
   width: 100%;
   max-width: 1100px;
-  max-height: 3028px;
 }
 
 .header {
@@ -33,7 +8,7 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   max-width: 1100px;
-  max-height: 293px;
+
 }
 
 .nav {
@@ -43,13 +18,12 @@
 
 .menu {
   display: flex;
-  gap: 36px;
+  gap: 33px;
   padding-top: 133px;
   padding-left: 50px;
   padding-right: 36.52px;
   padding-bottom: 138px;
-  min-width: 391.48px;
-  max-height: 22px;
+  min-width: 478px;
   list-style-type: circle;
 }
 
@@ -69,12 +43,12 @@
   text-decoration: none;
 }
 
-.aside {
+.logo {
   display: flex;
   margin-top: 92px;
   margin-bottom: 96px;
   margin-left: 8px;
-  min-width: 148px;
+  min-width: 145px;
   min-height: 105px;
 }
 
@@ -84,8 +58,7 @@
   padding-left: 184px;
   padding-right: 50px;
   padding-bottom: 100px;
-  min-width: 240px;
-  min-height: 98px;
+  min-width: 515px;
   flex-direction: column;
   list-style-type: none;
   font-style: normal;
@@ -107,7 +80,7 @@
 
 .div_img_lotos {
   width: 1100px;
-  height: 597px;
+  min-height: 597px;
   padding-top: 165px;
   gap: 106px;
   background-image: url(../images/cover.jpg);
@@ -120,10 +93,7 @@
 }
 
 .overlay {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -135,41 +105,35 @@
   display: flex;
   flex-direction: column;
   flex: 0 1 auto;
-  max-width: 1000px;
-  max-height: 385px;
+  min-width: 1000px;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 25px;
   gap: 20px;
 }
 
 .cover_text {
-  font-family: "Raleway-Bold", "Arial", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 700;
   font-size: 100px;
   line-height: 114px;
 }
 
-.cover_it {
+.title_start {
   align-self: flex-start;
   text-align: center;
-  width: 286px;
-  height: 115px;
   letter-spacing: 30px;
 }
 
-.cover_you {
+.title_center {
   align-self: center;
   text-align: center;
-  width: 339px;
-  height: 115px;
   letter-spacing: 26.5px;
+
 }
 
-.cover_need {
+.title_end {
   align-self: flex-end;
   text-align: right;
-  width: 387px;
-  height: 115px;
   letter-spacing: 30px;
 }
 
@@ -177,12 +141,10 @@
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
-  width: 1000px;
-  height: 51px;
+  min-width: 1000px;
   padding-top: 106px;
-  padding-right: 50px;
-  padding-left: 26px;
   padding-bottom: 50px;
+  gap: 45px;
 }
 
 .description_text {
@@ -191,21 +153,13 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 19px;
-}
-
-.span {
-  word-spacing: 25px;
-}
-
-.span_two {
-  word-spacing: 30px;
+  word-spacing: 18px;
 }
 
 .button {
   font-family: "Raleway", "Arial", sans-serif;
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   border: 1px solid white;
   background-color: transparent;
   color: #fff;
@@ -217,8 +171,6 @@
 }
 
 .title_lots {
-  max-width: 1052px;
-  max-height: 723px;
   padding-top: 180px;
   padding-bottom: 27px;
   padding-left: 64px;
@@ -233,14 +185,15 @@
   display: flex;
   flex-grow: 1;
   list-style-type: none;
-  gap: 15px;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0 auto;
-  margin-left: 13px;
+  gap: 25px;
+  justify-content: flex-start;
+  margin-left: 22px;
+  flex-wrap: wrap;
 }
 
 .card_lots {
+  display: flex;
+  padding-left: 5px;
   width: 334px;
   min-height: 596px;
   flex-grow: 1;
@@ -258,14 +211,14 @@
   background-position: center;
 }
 
-.lots_first {
+.lots_img_film {
   background-image: url(./../images/card-lot-01.jpg);
 }
 
-.lots_second {
+.lots_img_book {
   background-image: url(./../images/card-lot-02.jpg);
 }
-.lots_three {
+.lots_img_picture {
   background-image: url(./../images/card-lot-03.jpg);
 }
 
@@ -278,7 +231,7 @@
   text-transform: uppercase;
   color: white;
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 38px;
   padding-top: 48px;
 }
 
@@ -289,7 +242,7 @@
   line-height: 120%;
   color: white;
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 38px;
   padding-bottom: 48px;
 }
 
@@ -313,7 +266,6 @@
   margin-top: 120px;
   margin-right: 24px;
   width: 1052px;
-  height: 595px;
 }
 
 .about_logo {
@@ -331,16 +283,15 @@
 .about_logo_img {
   width: 148px;
   height: 114px;
-  padding-top: 15px;
+  padding-top: 7px;
 }
 
 .about_column {
   display: flex;
   flex-direction: column;
-  padding-top: 133px;
+  padding-top: 139px;
   padding-left: 45px;
   width: 693px;
-  height: 449px;
 }
 
 .about_title {
@@ -352,6 +303,10 @@
   color: #000;
 }
 
+.about_title_text {
+  margin-bottom: 105px;
+}
+
 .about_text {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
@@ -360,20 +315,16 @@
   color: #000;
 }
 
-.text_about_first {
-  margin-top: 100px;
-}
-
-.text_about_second {
-  margin-top: 24px;
+.about_text_auction {
+  width: 693px;
+  margin-bottom: 28px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3,  366.6px);
-  padding-top: 180px;
+  margin-top: 153px;
   width: 1100px;
-  height: 180px;
   align-items: flex-start;
 }
 
@@ -381,10 +332,7 @@
   font-style: normal;
   margin-left: 50px;
   margin-bottom: 82px;
-}
-
-.footer_menu {
-  padding-left: 154px;
+  width: 265px;
 }
 
 .footer_menu_links {
@@ -392,14 +340,7 @@
   text-underline-offset: 1px;
   text-align: center;
   color: black;
-}
-
-.footer_menu_text {
-  color: black;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
+  margin-bottom: 5px;
 }
 
 .footer_social {
@@ -408,7 +349,6 @@
   padding-left: 75px;
   padding-right: 50px;
   max-width: 240px;
-  max-height: 48px;
 }
 
 .social_img {
